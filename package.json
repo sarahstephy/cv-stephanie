@@ -15,7 +15,8 @@
     "lint:sass": "sass-lint src/**/*.scss -c -v",
     "lint:js": "eslint src/js/**/*.js",
     "lint": "npm run lint:sass && npm run lint:js",
-    "validate": "npm ls"
+    "validate": "npm ls",
+    "deploy": "gh-pages -d dist"
   },
   "pre-commit": [
     "lint"
@@ -29,7 +30,7 @@
     "boilerplate",
     "frontend"
   ],
-  "author": "David G",
+  "author": "Sarah R",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/davecarter/npm-project/issues"
@@ -39,6 +40,7 @@
     "autoprefixer": "^6.3.6",
     "browser-sync": "^2.11.2",
     "eslint": "^2.7.0",
+    "gh-pages": "^0.12.0",
     "mocha": "^2.4.5",
     "node-sass": "^3.4.2",
     "onchange": "^2.2.0",
