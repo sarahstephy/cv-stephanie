@@ -1,0 +1,93 @@
+$width-mobile: 400px;
+$width-tablet: 760px;
+$width-desktop: 1100px;
+
+
+
+@mixin simple-title{
+  font-family: 'Suez One', serif;
+  font-size: 2em;
+}
+
+.about {
+    padding: 4% 7%;
+
+  p{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-family: 'Open Sans', sans serif;
+  }
+
+  .subtitulo {
+    font-family: 'Open Sans', san serif;
+    font-weight: normal;
+    font-size: 20px;
+  }
+
+  .text-scroll{
+    font-size: 16px;
+    font-family: 'Open Sans', sans serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  hr.divider {
+    border-top: 1px dotted #8c8b8b;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .long-story{
+    padding-bottom: 10%;
+  }
+
+  .short-story{
+    padding-top: 10%;
+
+    .seccion{
+      font-family: 'Open Sans', san serif;
+      font-weight: 700;
+      font-size: .7em;
+    }
+  }
+
+  ul{
+    font-size: 18px;
+    font-family: 'Open Sans', sans serif;
+    font-weight: 300;
+    padding-bottom: 5%;
+  }
+
+  h2{
+    @include simple-title;
+    text-align: center;
+    font-size: 2.5em;
+  }
+  h3{
+    @include simple-title;
+    font-size: 1.5em;
+  }
+  .text-scroll{
+    text-align: center;
+    padding-bottom: 15%;
+  }
+
+  // tablet
+
+  @media screen and (min-width:$width-tablet){
+  padding: 4% 10%;
+  h2{
+    @include simple-title;
+    font-size: 4em;
+  }
+}
+
+// desktop
+
+
+  @media screen and (min-width:$width-desktop){
+  padding: 4% 25%;
+  }
+  }

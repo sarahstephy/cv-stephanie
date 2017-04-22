@@ -1,6 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Suez+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Suez+One');
 @import "index.scss";
+@import "about.scss";
 @import "contacto.scss";
+
+
+$width-mobile: 400px;
+$width-tablet: 760px;
+$width-desktop: 1100px;
 
 
 .frame{

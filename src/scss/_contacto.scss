@@ -24,10 +24,14 @@ $width-desktop: 1100px;
   p{
   font-size: 18px;
   font-family: 'Open Sans', sans serif;
+  font-weight: 300;
+  a{
+    font-weight: 600;
+  }
   }
   .linked {
     color: blue;
-    font-weight: 400;
+    font-weight: 600;
     &:hover{
       color: white;
       background-color: blue;
@@ -35,14 +39,14 @@ $width-desktop: 1100px;
   }
   .twitter {
     color: lightblue;
-    font-weight: 400;
+    font-weight: 600;
     &:hover{
       color: white;
       background-color: lightblue;
     }}
     .medium {
       color: green;
-      font-weight: 400;
+      font-weight: 600;
       &:hover{
         color: white;
         background-color: green;
