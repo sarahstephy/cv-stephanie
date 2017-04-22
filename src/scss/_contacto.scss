@@ -1,0 +1,65 @@
+$width-mobile: 400px;
+$width-tablet: 760px;
+$width-desktop: 1100px;
+
+
+
+@mixin simple-title{
+  font-family: 'Suez One', serif;
+  font-size: 2em;
+}
+
+.contact {
+  padding: 4% 7%;
+  @media screen and (min-width:$width-desktop){
+  margin-right: 30%;
+  }
+  @media screen and (min-width:$width-tablet){
+  margin-right: 30%;
+  }
+
+  h2{
+    @include simple-title;
+  }
+  p{
+  font-size: 18px;
+  font-family: 'Open Sans', sans serif;
+  }
+  .linked {
+    color: blue;
+    font-weight: 400;
+    &:hover{
+      color: white;
+      background-color: blue;
+    }
+  }
+  .twitter {
+    color: lightblue;
+    font-weight: 400;
+    &:hover{
+      color: white;
+      background-color: lightblue;
+    }}
+    .medium {
+      color: green;
+      font-weight: 400;
+      &:hover{
+        color: white;
+        background-color: green;
+
+    }}}
+
+
+
+
+  // @media screen and (max-width:$width-desktop){
+  //
+  // }
+  //
+  // @media screen and (max-width:$width-tablet){
+  //
+  // }
+  //
+  // @media screen and (max-width:$width-mobile){
+  //
+  // }

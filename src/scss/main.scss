@@ -1,8 +1,57 @@
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Suez+One');
+@import "index.scss";
+@import "contacto.scss";
 
-  h1 {
-    font-weight: regular;
+
+.frame{
+  overflow: hidden;
+  height: 70%;
+  @media only screen and (min-width: 780px){
+    height: 20vh;
   }
 }
+
+@mixin simple-title{
+  font-family: 'Suez One', serif;
+  font-size: 1.5em;
+}
+
+// @mixin paragraph {
+//   font-size: 1em;
+//   font-family: 'Open Sans', sans serif;
+// }
+
+
+
+//MOBILE MENU
+//
+// #mobile-button {
+// 	display: none;
+// 	position: absolute;
+// 	top: 25px;
+// 	right: 0;
+// 	background-color: #fff;
+// 	width: 50px;
+// 	height: 50px;
+// 	z-index: 3;
+// 	padding: 40px 0;
+// 	cursor: pointer;
+//
+// 	hr {
+// 		width: 15px;
+// 		height: 2px;
+// 		background-color: #292929;
+// 		border: none;
+// 		margin: 0px auto 2px;
+// 	}
+// }
+//
+// #mobile-button {
+//   display: block;
+// }
+//
+// #menu-container {
+//   clear: both;
+//   display: none;
+//   padding-bottom: 30px;
+// }

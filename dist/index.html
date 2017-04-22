@@ -5,33 +5,48 @@
   <title>Portfolio Sarah</title>
   <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="src/sprites/emojione.sprites.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Suez+One" rel="stylesheet">
+  <script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
+  <script src="assets/js/menu.js"></script>
 </head>
 
 <body>
+<!--
+  <div id="mobile-button">
+    <hr><hr><hr>
+  </div>
+  <div id="mobile-close">
+    ✕
+  </div>
+</div>
+<div id="menu-container"> -->
 
   <ul class="container">
       <li class="item item-2">
-          <a href="#" class="link">About</a>
+          <a href="about.html" class="link">About</a>
       </li>
       <li class="item item-3">
-          <a href="#" class="link">Work</a>
+          <a href="work.html" class="link">Work</a>
       </li>
       <li class="item item-4">
-          <a href="#" class="link">Contact</a>
+          <a href="contact.html" class="link">Contact</a>
       </li>
   </ul>
+<!-- </div> -->
+
+  <div class="cover">
+  </div>
 
 <div class="intro">
 <span class="headline">Hi! Sarah is a part-time
-<a href="work.html">digital designer</a><span class="emojione emojione-1f918">
+<a href="work.html" class="hovers" class="hover-work">digital designer</a><span class="emojione emojione-1f918">
   &#x1f918;
-</span>, full-time <a href="about.html" id="human">human</a><span class="emojione emojione-1f643">
-  &#x1f643;</span> You can also <a href="contact.html">contact</a> her for her secret guacamole <span class="emojione emojione-1f951">
+</span>, full-time <a href="about.html" class="hovers" class="hover-about">human</a>
+<span class="emojione emojione-1f643">
+  &#x1f643;</span> <span class="hola">You can also </span> <a href="contact.html" class="hovers">contact</a> her for her secret guacamole <span class="emojione emojione-1f951">
   &#x1f951;
 </span> recipe.
 </span>
-<p>(She doesn't always talk about herself in third person. That's wierd.)</p>
+<p id="wierd">(She doesn't always talk about herself in third person. That's wierd.)</p>
 </div>
   <script type="text/javascript" src="js/index.js"></script>
 </body>
