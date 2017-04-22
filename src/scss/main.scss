@@ -2,6 +2,9 @@
 @import "index.scss";
 @import "about.scss";
 @import "contacto.scss";
+@import "case.scss";
+@import "work.scss";
+
 
 
 $width-mobile: 400px;
@@ -20,6 +23,24 @@ $width-desktop: 1100px;
 @mixin simple-title{
   font-family: 'Suez One', serif;
   font-size: 1.5em;
+}
+
+// h1 {
+//   @mixin simple-title {
+//     font-size: 5em;
+//   }
+// }
+//
+// h2 {
+//   @mixin simple-title {
+//   font-size: 7em;
+//   }
+// }
+
+p{
+font-size: 18px;
+font-family: 'Open Sans', sans serif;
+font-weight: 300;
 }
 
 // @mixin paragraph {

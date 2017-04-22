@@ -21,37 +21,37 @@ $width-desktop: 1100px;
   h2{
     @include simple-title;
   }
-  p{
-  font-size: 18px;
-  font-family: 'Open Sans', sans serif;
-  font-weight: 300;
+
   a{
     font-weight: 600;
+
   }
   }
   .linked {
-    color: blue;
+    color: #0077B5;
     font-weight: 600;
+    //color: #525252;background: linear-gradient(to top, #afdbf0 50%, rgba(0, 0, 0, 0) 50%);background-size: 100% 200%;background-position: top;-moz-transition: background-position 0.1s ease-out;-o-transition: background-position 0.1s ease-out;-webkit-transition: background-position 0.1s ease-out;transition: background-position 0.1s ease-out;border-bottom: 4px solid #afdbf0;
+
     &:hover{
       color: white;
-      background-color: blue;
+      background-color: #0077B5;
     }
   }
   .twitter {
-    color: lightblue;
+    color: #4099FF;
     font-weight: 600;
     &:hover{
       color: white;
-      background-color: lightblue;
+      background-color: #4099FF;
     }}
     .medium {
-      color: green;
+      color: #00ab6c;
       font-weight: 600;
       &:hover{
         color: white;
-        background-color: green;
+        background-color: #00ab6c;
 
-    }}}
+    }}
 
 
 
