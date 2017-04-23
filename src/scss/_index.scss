@@ -45,9 +45,10 @@ a{
   text-align: center;
   padding: 7%;
 
-  .dissapear, .link {
+  .dissapear, .link-work, .link-about, .link-contact {
     font-family: 'Suez One',serif;
     font-size: 2em;
+    color: black;
 
 
   @media only screen and (min-width : 768px) {
@@ -72,7 +73,7 @@ a{
 //   color: white;
 // }
 
-.hovers:link, .hovers:visited {
+.hovers:link-nav, .hovers:visited {
   color: black;
 
 

@@ -13,17 +13,77 @@
   <script>
 
   $(document).ready(function(){
+// LINK WORK
 
     $("body").css("background-color","white");
-    $(".link").hover(function() {
+    $(".link-work").hover(function() {
       $(".dissapear").animate({ opacity: 0},1);
       $(".dissapear").clearQueue();
-      $("body").css("background-color", "yellow");
+      $(".link-about").animate({ opacity: 0},1);
+      $(".link-about").clearQueue();
+      $(".link-contact").animate({ opacity: 0},1);
+      $(".link-contact").clearQueue();
+      $("body").css("background-color", "pink");
     }, function() {
       $(".dissapear").animate({ opacity: 1} ,1);
       $(".dissapear").clearQueue();
+      $(".link-about").animate({ opacity: 1} ,1);
+      $(".link-about").clearQueue();
+      $(".link-contact").animate({ opacity: 1} ,1);
+      $(".link-contact").clearQueue();
       $("body").css("background-color", "white");
     });
+// LINK ABOUT
+    $("body").css("background-color","white");
+    $(".link-about").hover(function() {
+      $(".dissapear").animate({ opacity: 0},1);
+      $(".dissapear").clearQueue();
+      $(".link-work").animate({ opacity: 0},1);
+      $(".link-work").clearQueue();
+      $(".link-contact").animate({ opacity: 0},1);
+      $(".link-contact").clearQueue();
+      $("body").css("background-color", "lightblue");
+    }, function() {
+      $(".dissapear").animate({ opacity: 1} ,1);
+      $(".dissapear").clearQueue();
+      $(".link-contact").animate({ opacity: 1} ,1);
+      $(".link-contact").clearQueue();
+      $(".link-work").animate({ opacity: 1} ,1);
+      $(".link-work").clearQueue();
+      $("body").css("background-color", "white");
+    });
+
+    // LINK CONTACT
+        $("body").css("background-color","white");
+        $(".link-contact").hover(function() {
+          $(".dissapear").animate({ opacity: 0},1);
+          $(".dissapear").clearQueue();
+          $(".link-work").animate({ opacity: 0},1);
+          $(".link-work").clearQueue();
+          $(".link-about").animate({ opacity: 0},1);
+          $(".link-about").clearQueue();
+          $("body").css("background-color", "lightgreen");
+        }, function() {
+          $(".dissapear").animate({ opacity: 1} ,1);
+          $(".dissapear").clearQueue();
+          $(".link-about").animate({ opacity: 1} ,1);
+          $(".link-aboutt").clearQueue();
+          $(".link-work").animate({ opacity: 1} ,1);
+          $(".link-work").clearQueue();
+          $("body").css("background-color", "white");
+        });
+
+    // $("body").css("background-color","white");
+    // $(".link").hover(function() {
+    //   $(".dissapear").animate({ opacity: 0},1);
+    //   $(".dissapear").clearQueue();
+    //   $("body").css("background-color", "yellow");
+    // }, function() {
+    //   $(".dissapear").animate({ opacity: 1} ,1);
+    //   $(".dissapear").clearQueue();
+    //   $("body").css("background-color", "white");
+    // });
+
   });
 
   </script>
@@ -40,15 +100,17 @@
 </div>
 <div id="menu-container"> -->
 
+<!-- NAVEGACION HOLAAAAAAA NO TE CUELES -->
+
   <ul class="container">
       <li class="item item-2">
-          <a href="about.html" class="link">About</a>
+          <a href="about.html" class="link-nav">About</a>
       </li>
       <li class="item item-3">
-          <a href="work.html" class="link">Work</a>
+          <a href="work.html" class="link-nav">Work</a>
       </li>
       <li class="item item-4">
-          <a href="contact.html" class="link">Contact</a>
+          <a href="contact.html" class="link-nav">Contact</a>
       </li>
   </ul>
 <!-- </div> -->
@@ -71,16 +133,16 @@
 
 <div class="intro">
 <span class="dissapear" class="headline">Hi! Sarah is a part-time </span>
-<a href="work.html" class="link"> digital designer
+<a href="work.html" class="link-work"> digital designer
   <span class="emojione emojione-1f918">&#x1f918;
 </span></a>
 
 <span class="dissapear">, full-time </span>
-<a href="about.html" class="link"> human <span class="emojione emojione-1f643">
+<a href="about.html" class="link-about"> human <span class="emojione emojione-1f643">
   &#x1f643;</span></a>
 
 <span class="dissapear">You can also </span>
-<a href="contact.html" class="link"> contact</a>
+<a href="contact.html" class="link-contact"> contact</a>
 <span class="dissapear">  her for her secret guacamole <span class="emojione emojione-1f951">
   &#x1f951;
 </span></span>
