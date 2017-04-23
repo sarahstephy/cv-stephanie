@@ -44,9 +44,11 @@ a{
 .intro {
   text-align: center;
   padding: 7%;
-  .headline {
-  font-family: 'Suez One',serif;
-  font-size: 2em;
+
+  .dissapear, .link {
+    font-family: 'Suez One',serif;
+    font-size: 2em;
+
 
   @media only screen and (min-width : 768px) {
   font-size: 3em;
@@ -55,7 +57,7 @@ a{
       font-size: 5em;
 
 }}
-#wierd {
+#weird {
   padding-top: 2%;
   font-size: 1em;
   font-family: 'Open Sans', sans serif;
