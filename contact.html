@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Sarah</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="src/sprites/emojione.sprites.css"/>
+  <script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+
+  <!-- NAV -->
+
+  <header>
+
+    <div class="container">
+        <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+        <input id="toggle" type="checkbox">
+
+        <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+
+        <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+        <label class="toggle-container" for="toggle">
+            <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+            <span class="button button-toggle"></span>
+        </label>
+
+        <!-- The nav menu -->
+        <nav class="nav">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item" href="about.html">About</a>
+            <a class="nav-item" href="work.html">Work</a>
+            <a class="nav-item" href="contact.html">Contact</a>
+        </nav>
+
+    </div>
+  </header>
+
+<!-- CONTENT -->
+
+  <div class="contact">
+    <h2>Contact<span class="emojione emojione-270c">
+      &#x270c;</span> </h2>
+    <p class="algo">
+      For guacamole recipe and/or work inquiries, shoot an email:
+    <b>sarah.romerob@gmail.com</b> <br><br>
+    I try to keep updated my <a class="linked" href="https://www.linkedin.com/in/sarahromero14/">LinkedIn</a>, post some UX and Design related posts on <a class="twitter" href="https://twitter.com/sarahstephyy">Twitter</a>, and have some yet-to-be published articles on <a class="medium" href="https://medium.com/@sarahstephy">Medium</a>.
+    </p>
+  </div>
+
+</body>
