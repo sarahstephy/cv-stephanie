@@ -26,6 +26,45 @@ $width-desktop: 1100px;
   font-size: 1.5em;
 }
 
+
+// SCROLL TO TOP
+
+.top-scroll{
+  font-size: 16px;
+  font-family: 'Open Sans', sans serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.top{
+  font-size: 16px;
+  font-family: 'Open Sans', sans serif;
+  font-weight: 600;
+
+
+&:hover {
+  background-color: pink;
+}
+}
+
+
+
+
+.text-scroll{
+  text-decoration: none;
+  color: inherit;
+  list-style-type: none;
+  font-size: 16px;
+  font-family: 'Open Sans', sans serif;
+  font-weight: 600;
+
+  a, a:link, a:visited,{
+    color: black;
+    text-decoration: none;
+  }
+
+}
+
 // h1 {
 //   @mixin simple-title {
 //     font-size: 5em;

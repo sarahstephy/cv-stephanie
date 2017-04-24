@@ -34,7 +34,7 @@ $(document).ready(function(){
     $(".link-about").clearQueue();
     $(".link-contact").animate({ opacity: 0},1);
     $(".link-contact").clearQueue();
-    $("body").css("background-color", "pink");
+    $("body").css("background-color", "#8EBCFD");
   }, function() {
     $(".dissapear").animate({ opacity: 1} ,1);
     $(".dissapear").clearQueue();
@@ -53,7 +53,7 @@ $(document).ready(function(){
     $(".link-work").clearQueue();
     $(".link-contact").animate({ opacity: 0},1);
     $(".link-contact").clearQueue();
-    $("body").css("background-color", "lightblue");
+    $("body").css("background-color", "#FCF962");
   }, function() {
     $(".dissapear").animate({ opacity: 1} ,1);
     $(".dissapear").clearQueue();
@@ -73,7 +73,7 @@ $(document).ready(function(){
         $(".link-work").clearQueue();
         $(".link-about").animate({ opacity: 0},1);
         $(".link-about").clearQueue();
-        $("body").css("background-color", "lightgreen");
+        $("body").css("background-color", "pink");
       }, function() {
         $(".dissapear").animate({ opacity: 1} ,1);
         $(".dissapear").clearQueue();
