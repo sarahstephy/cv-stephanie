@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Suez+One');
 @import "index.scss";
+@import "menu.scss";
 @import "about.scss";
 @import "contacto.scss";
 @import "case.scss";
@@ -42,43 +43,3 @@ font-size: 18px;
 font-family: 'Open Sans', sans serif;
 font-weight: 300;
 }
-
-// @mixin paragraph {
-//   font-size: 1em;
-//   font-family: 'Open Sans', sans serif;
-// }
-
-
-
-//MOBILE MENU
-//
-// #mobile-button {
-// 	display: none;
-// 	position: absolute;
-// 	top: 25px;
-// 	right: 0;
-// 	background-color: #fff;
-// 	width: 50px;
-// 	height: 50px;
-// 	z-index: 3;
-// 	padding: 40px 0;
-// 	cursor: pointer;
-//
-// 	hr {
-// 		width: 15px;
-// 		height: 2px;
-// 		background-color: #292929;
-// 		border: none;
-// 		margin: 0px auto 2px;
-// 	}
-// }
-//
-// #mobile-button {
-//   display: block;
-// }
-//
-// #menu-container {
-//   clear: both;
-//   display: none;
-//   padding-bottom: 30px;
-// }

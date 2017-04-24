@@ -5,41 +5,56 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Portfolio Sarah</title>
   <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="src/sprites/emojione.sprites.css"/>
-  <script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
+  <!-- <link rel="stylesheet" href="src/sprites/emojione.sprites.css"/> -->
+  <!-- <script src="/src/js/jquery-3.1.1.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <!-- <script src="../js/menu.js"></script> -->
+  <script src="../src/js/index.js"></script>
 </head>
 
 <body>
 
 <!-- NAV -->
 
+<header>
 
-  <ul class="container">
-      <li class="item item-2">
-          <a href="about.html" class="link">About</a>
-      </li>
-      <li class="item item-3">
-          <a href="work.html" class="link">Work</a>
-      </li>
-      <li class="item item-4">
-          <a href="contact.html" class="link">Contact</a>
-      </li>
-  </ul>
+  <div class="container">
+      <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+      <input id="toggle" type="checkbox">
 
+      <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+
+      <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+      <label class="toggle-container" for="toggle">
+          <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+          <span class="button button-toggle"></span>
+      </label>
+
+      <!-- The nav menu -->
+      <nav class="nav">
+          <a class="nav-item" href="index.html">Home</a>
+          <a class="nav-item" href="about.html">About</a>
+          <a class="nav-item" href="work.html">Work</a>
+          <a class="nav-item" href="contact.html">Contact</a>
+      </nav>
+
+  </div>
+</header>
 
 <!-- CONTENT -->
 
 <div class="about">
 <h2>About Sarah</h2>
 <div class="text-scroll">
-  <span class="emojione emojione-1f447">
-  &#x1f447;   STORY-TELLING VERSION</span>
-  <span class="emojione emojione-1f447">
+  <a class="emojione emojione-1f447" id="long">
+  &#x1f447;   STORY-TELLING VERSION</a>
+  <span class="emojione emojione-1f447" id="short">
     &#x1f447;   I'VE READ TOO MANY CV'S VERSION</span>
 </div>
-<span class="subtitulo">My Story</span>
+
 
 <div class="long-story">
+  <span class="subtitulo">My Story</span>
 <p>As a teenager I didn’t understand why I was so appealed to advertising that moved me and made me feel something.
   After choosing Graphic Design as my career, I did fell in love with the aesthetic part of it, but was lacking of something, a meaning.
   <b>I started out as a designer who designed for designers</b>.
@@ -107,8 +122,8 @@ One that I can recall is that even with cultural differences and living in an ev
   </div>
 
   <div class="text-scroll">
-    <span class="emojione emojione-1f446">
-    &#x1f446;   BACK TO TOP</span>
+    <a class="emojione emojione-1f446">
+    &#x1f446;   BACK TO TOP</a>
   </div>
 </div>
 

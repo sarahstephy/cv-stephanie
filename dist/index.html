@@ -9,127 +9,54 @@
   <!-- <script src="/src/js/jquery-3.1.1.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <!-- <script src="../js/menu.js"></script> -->
-  <script src="/src/js/index.js"></script>
-  <script>
+  <script src="../src/js/index.js"></script>
 
-  $(document).ready(function(){
-// LINK WORK
-
-    $("body").css("background-color","white");
-    $(".link-work").hover(function() {
-      $(".dissapear").animate({ opacity: 0},1);
-      $(".dissapear").clearQueue();
-      $(".link-about").animate({ opacity: 0},1);
-      $(".link-about").clearQueue();
-      $(".link-contact").animate({ opacity: 0},1);
-      $(".link-contact").clearQueue();
-      $("body").css("background-color", "pink");
-    }, function() {
-      $(".dissapear").animate({ opacity: 1} ,1);
-      $(".dissapear").clearQueue();
-      $(".link-about").animate({ opacity: 1} ,1);
-      $(".link-about").clearQueue();
-      $(".link-contact").animate({ opacity: 1} ,1);
-      $(".link-contact").clearQueue();
-      $("body").css("background-color", "white");
-    });
-// LINK ABOUT
-    $("body").css("background-color","white");
-    $(".link-about").hover(function() {
-      $(".dissapear").animate({ opacity: 0},1);
-      $(".dissapear").clearQueue();
-      $(".link-work").animate({ opacity: 0},1);
-      $(".link-work").clearQueue();
-      $(".link-contact").animate({ opacity: 0},1);
-      $(".link-contact").clearQueue();
-      $("body").css("background-color", "lightblue");
-    }, function() {
-      $(".dissapear").animate({ opacity: 1} ,1);
-      $(".dissapear").clearQueue();
-      $(".link-contact").animate({ opacity: 1} ,1);
-      $(".link-contact").clearQueue();
-      $(".link-work").animate({ opacity: 1} ,1);
-      $(".link-work").clearQueue();
-      $("body").css("background-color", "white");
-    });
-
-    // LINK CONTACT
-        $("body").css("background-color","white");
-        $(".link-contact").hover(function() {
-          $(".dissapear").animate({ opacity: 0},1);
-          $(".dissapear").clearQueue();
-          $(".link-work").animate({ opacity: 0},1);
-          $(".link-work").clearQueue();
-          $(".link-about").animate({ opacity: 0},1);
-          $(".link-about").clearQueue();
-          $("body").css("background-color", "lightgreen");
-        }, function() {
-          $(".dissapear").animate({ opacity: 1} ,1);
-          $(".dissapear").clearQueue();
-          $(".link-about").animate({ opacity: 1} ,1);
-          $(".link-aboutt").clearQueue();
-          $(".link-work").animate({ opacity: 1} ,1);
-          $(".link-work").clearQueue();
-          $("body").css("background-color", "white");
-        });
-
-    // $("body").css("background-color","white");
-    // $(".link").hover(function() {
-    //   $(".dissapear").animate({ opacity: 0},1);
-    //   $(".dissapear").clearQueue();
-    //   $("body").css("background-color", "yellow");
-    // }, function() {
-    //   $(".dissapear").animate({ opacity: 1} ,1);
-    //   $(".dissapear").clearQueue();
-    //   $("body").css("background-color", "white");
-    // });
-
-  });
-
-  </script>
 </head>
 
 <body>
-<!--
-  <div id="mobile-button">
-    <hr><hr><hr>
-  </div>
-  <div id="mobile-close">
-    ✕
-  </div>
-</div>
-<div id="menu-container"> -->
 
-<!-- NAVEGACION HOLAAAAAAA NO TE CUELES -->
+  <header>
 
-  <ul class="container">
-      <li class="item item-2">
-          <a href="about.html" class="link-nav">About</a>
-      </li>
-      <li class="item item-3">
-          <a href="work.html" class="link-nav">Work</a>
-      </li>
-      <li class="item item-4">
-          <a href="contact.html" class="link-nav">Contact</a>
-      </li>
-  </ul>
-<!-- </div> -->
+    <div class="container">
+        <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+        <input id="toggle" type="checkbox">
 
-  <!-- <div class="cover">
-  </div>
+        <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
 
-<div class="intro">
-<span class="headline">Hi! Sarah is a part-time
-<a href="work.html" class="hovers" class="hover-work">digital designer</a><span class="emojione emojione-1f918">
-  &#x1f918;
-</span>, full-time <a href="about.html" class="hovers" class="hover-about">human</a>
-<span class="emojione emojione-1f643">
-  &#x1f643;</span> <span class="hola">You can also </span> <a href="contact.html" class="hovers">contact</a> her for her secret guacamole <span class="emojione emojione-1f951">
-  &#x1f951;
-</span> recipe.
-</span>
-<p id="wierd">(She doesn't always talk about herself in third person. That's weird.)</p>
-</div> -->
+        <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+        <label class="toggle-container" for="toggle">
+            <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+            <span class="button button-toggle"></span>
+        </label>
+
+        <!-- The nav menu -->
+        <nav class="nav">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item" href="about.html">About</a>
+            <a class="nav-item" href="work.html">Work</a>
+            <a class="nav-item" href="contact.html">Contact</a>
+        </nav>
+
+    </div>
+
+    <!-- NAVEGACION -->
+
+      <!-- <ul class="nav">
+          <li class="nav-item item-2">
+              <a href="about.html" class="link">About</a>
+          </li>
+          <li class="nav-item item-3">
+              <a href="work.html" class="link">Work</a>
+          </li>
+          <li class="nav-item item-4">
+              <a href="contact.html" class="link">Contact</a>
+          </li>
+      </ul> -->
+
+  </header>
+
+
+
 
 <div class="intro">
 <span class="dissapear" class="headline">Hi! Sarah is a part-time </span>
